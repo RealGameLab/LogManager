@@ -276,7 +276,7 @@ void FLogManager::WriteDataToArchive(FLogAsyncWriter* AsyncWriter, const TCHAR* 
     const FString Message = FString::Printf(TEXT("%s%s"), Data, bAutoEmitLineTerminator ? LINE_TERMINATOR : TEXT(""));
 #endif // PLATFORM_LINUX
 
-    const FString LogLine = FOutputDevice::FormatLogLine(Verbosity, Category, *Message, GPrintLogTimes, Time);
+    const FString LogLine = FOutputDeviceHelper::FormatLogLine(Verbosity, Category, *Message, GPrintLogTimes, Time);
     CastAndSerializeData(AsyncWriter, *LogLine);
 }
 
