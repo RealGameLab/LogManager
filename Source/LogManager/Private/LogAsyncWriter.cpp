@@ -1,6 +1,5 @@
-// Copyright 2016 wang jie(newzeadev@gmail.com). All Rights Reserved.
-
-#include "LogManagerPrivatePCH.h"
+#include "LogAsyncWriter.h"
+#include "RunnableThread.h"
 
 FLogAsyncWriter::FLogAsyncWriter(FArchive& InAr)
     : Thread(nullptr)

@@ -1,6 +1,5 @@
-// Copyright 2016 wang jie(newzeadev@gmail.com). All Rights Reserved.
-
 #pragma once
+#include "Runnable.h"
 
 class FLogAsyncWriter : public FRunnable
 {

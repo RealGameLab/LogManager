@@ -1,8 +1,8 @@
 // Copyright 2016 wang jie(newzeadev@gmail.com). All Rights Reserved.
 
 #pragma once
-
-#include "LogManagerPrivatePCH.h"
+#include "ILogManager.h"
+#include "Misc/OutputDeviceFile.h"
 
 class FLogManager : public FOutputDevice, public ILogManager
 {

@@ -1,6 +1,8 @@
-// Copyright 2016 wang jie(newzeadev@gmail.com). All Rights Reserved.
-
-#include "LogManagerPrivatePCH.h"
+#include "LogManager.h"
+#include "CoreTypes.h"
+#include "Misc/OutputDeviceHelper.h"
+#include "CoreGlobals.h"
+#include "HAL/PlatformOutputDevices.h"
 
 typedef uint8 UTF8BOMType[3];
 static UTF8BOMType UTF8BOM = { 0xEF, 0xBB, 0xBF };
